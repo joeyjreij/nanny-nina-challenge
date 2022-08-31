@@ -15,6 +15,7 @@ trait FilterTrait
      */
     public function getFilteredQueryResult(Builder $builder, array $data): Builder
     {
+        // possible to extend the filter method here, so it will be the same in every service/controller/...
         return $builder->where($data);
     }
 }
